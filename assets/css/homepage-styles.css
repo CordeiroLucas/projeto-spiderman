@@ -55,6 +55,7 @@ body::before {
     object-fit: cover;
     position: absolute;
     opacity: 1;
+    transition: opacity 1s ease-in-out;
 }
 
 .s-card__image {
@@ -62,7 +63,7 @@ body::before {
     height: 100%;
     object-fit: contain;
     position: relative;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 1s ease-in-out;
 }
 
 .s-card__title {
@@ -72,6 +73,7 @@ body::before {
     position: absolute;
     width: 100%;
     bottom: 0;
+    transition: bottom 0.5s ease-in-out;
 }
 
 .s-controller {
@@ -123,4 +125,9 @@ body::before {
 
 .s-card--hovered .s-card__image {
     transform: scale(1.4);
+}
+
+.s-card--hovered .s-card__title {
+    position: absolute;
+    bottom: 50%;
 }
