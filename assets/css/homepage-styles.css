@@ -48,6 +48,7 @@ body::before {
     width: calc(100%/3 - 8%);
     height: 70vh;
     position: relative;
+    transition: 0.5s ease-in-out;
 }
 
 .s-card__background {
@@ -126,6 +127,7 @@ body::before {
 
 .s-card--hovered .s-card__image {
     transform: scale(1.4);
+    filter: drop-shadow(30px 10px 4px rgba(0, 0, 0, 0.5));
 }
 
 .s-card--hovered .s-card__title {
@@ -147,4 +149,8 @@ body#spider-man-03-hovered::before {
 
 body[id^="spider-man-"]::before {
     opacity: 1;
+}
+
+body[id^="spider-man-"] .s-card:not(.s-card--hovered) {
+    filter: grayscale(100%);
 }
