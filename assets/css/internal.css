@@ -43,3 +43,14 @@
 .navigator ul li:last-child{
   margin-bottom: 0;
 }
+
+.navigator ul li a {
+  color: white;
+  border: solid 2px white;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
