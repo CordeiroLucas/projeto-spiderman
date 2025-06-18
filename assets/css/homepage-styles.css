@@ -131,7 +131,6 @@ body::before {
 }
 
 .s-card--hovered .s-card__title {
-    position: absolute;
     bottom: 50%;
 }
 
