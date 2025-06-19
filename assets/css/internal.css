@@ -1,4 +1,5 @@
 @import url('/assets/css/reset.css');
+@import url('/assets/css/global.css');
 
 .s-wrapper {
   display: flex;
@@ -46,6 +47,7 @@
 
 .navigator ul li a {
   color: white;
+  background-color: black;
   border: solid 2px white;
   width: 45px;
   height: 45px;
@@ -53,4 +55,29 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.navigator::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background-color: white;
+  z-index: 0;
+}
+
+.navigator ul {
+  z-index: 1;
+}
+
+.navigator ul li a:hover, 
+.navigator ul li a:active {
+  color: var(--primary-color);
+  background-color: white;
+}
+
+.navigator .navigator__icon {
+  position: absolute;
+  top: -20px;
 }
