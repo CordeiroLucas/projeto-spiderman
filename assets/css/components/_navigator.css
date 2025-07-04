@@ -11,11 +11,11 @@
   margin: 60px 0;
 }
 
-.navigator ul li:first-child{
+.navigator ul li:first-child {
   margin-top: 0;
 }
 
-.navigator ul li:last-child{
+.navigator ul li:last-child {
   margin-bottom: 0;
 }
 
@@ -45,7 +45,7 @@
   z-index: 1;
 }
 
-.navigator ul li a:hover, 
+.navigator ul li a:hover,
 .navigator ul li a:active {
   color: var(--primary-color);
   background-color: white;
@@ -54,4 +54,8 @@
 .navigator .navigator__icon {
   position: absolute;
   top: -20px;
+}
+
+.navigator .current a {
+  background-color: var(--primary-color);
 }
